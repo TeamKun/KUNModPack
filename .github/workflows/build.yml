@@ -14,6 +14,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Script
+      run: |
+        sh scripts/download.sh
     - name: Build FruitLauncher Modpack
       env:
         GRADLE_OPTS: -Dorg.gradle.daemon=false
