@@ -1,0 +1,213 @@
+{
+  "name" : "Pack18",
+  "title" : "KUN",
+  "thumb" : "",
+  "key" : null,
+  "gameVersion" : "1.12.2",
+  "server" : {
+    "serverHost" : "",
+    "serverPort" : 25565
+  },
+  "features" : [
+    {
+      "properties" : {
+        "name" : "SignPicture",
+        "description" : "看板で画像を設置！<br>\n簡単にマイクラ内に画像を貼れる<br>\n<img alt=\"SignPicture\" src=\"https://i.gyazo.com/87161235877c5f3aa3e1f55f65ab40e1.png\"><br>\n<br>\n※このModを導入しないとサーバー内で謎看板を目撃することになります。<br>",
+        "recommendation" : "starred",
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/SignPicture*",
+          "mods/BnnWidget*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "BetterFPS",
+        "description" : "軽量化Mod",
+        "recommendation" : null,
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/BetterFps*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "Journeymap",
+        "description" : "マップMod<br>\n<img src=\"https://i.gyazo.com/91198c70261e4dccbe2f7545fd1a96ad.png\"><br>\nウェイポイント、デスポイントなども表示でき、今や必需品となっている。",
+        "recommendation" : "starred",
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/journeymap*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "ReAuth",
+        "description" : "無効なセッションでお困りのそこの君!!<br>\nマイクラを再起動せずともセッションを取り戻す事ができるこのModを導入しましょう!<br>\n<img src=\"https://i.gyazo.com/f50ddf5f13c3c7926f5bcd0b84ccd82d.png\">",
+        "recommendation" : "starred",
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/reauth*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "InventoryTweaks",
+        "description" : "インベントリを整理するだけでなく、一括アイテム移動や一つずつの移動などの便利な操作が使えるようになるMod",
+        "recommendation" : "starred",
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/InventoryTweaks*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "[Windows] IntelliInput",
+        "description" : "日本語Mod (Windows 向け)<!--OS:({\"allow\":[\"windows\"]})-->",
+        "recommendation" : null,
+        "selected" : false
+      },
+      "files" : {
+        "include" : [
+          "mods/IntelliInput*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "OptiFine",
+        "description" : "軽量化、描画改善Mod",
+        "recommendation" : null,
+        "selected" : false
+      },
+      "files" : {
+        "include" : [
+          "mods/OptiFine*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "ServerObserver",
+        "description" : "サーバーを監視し通知することができます。<br>\nまた、自動的にログインをすることができます。",
+        "recommendation" : null,
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/ServerObserver*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "Schematica",
+        "description" : "自動建築Mod<br>\nこれを入れれば建築がはかどりんぐ",
+        "recommendation" : null,
+        "selected" : false
+      },
+      "files" : {
+        "include" : [
+          "mods/Schematica*",
+          "mods/LunatriusCore*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "[macOS, OSX] CocoaInput",
+        "description" : "日本語Mod (macOS, OSX 向け)<!--OS:({\"allow\":[\"osx\"]})-->",
+        "recommendation" : "avoid",
+        "selected" : false
+      },
+      "files" : {
+        "include" : [
+          "mods/CocoaInput*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "デフォルトオプション",
+        "description" : "NONE指定のキーコンフィグ",
+        "recommendation" : null,
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/DefaultOptions*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "VanillaFix",
+        "description" : "軽量化Mod",
+        "recommendation" : null,
+        "selected" : false
+      },
+      "files" : {
+        "include" : [
+          "mods/VanillaFix*"
+        ],
+        "exclude" : [ ]
+      }
+    },
+    {
+      "properties" : {
+        "name" : "SmoothFont",
+        "description" : "文字がきれいになるよ",
+        "recommendation" : null,
+        "selected" : true
+      },
+      "files" : {
+        "include" : [
+          "mods/SmoothFont*"
+        ],
+        "exclude" : [ ]
+      }
+    }
+  ],
+  "userFiles" : {
+    "include" : [
+      "options.txt",
+      "optionsshaders.txt",
+      ".curseclient",
+      "manifest.json",
+      "minecraftinstance.json",
+      "signpic/"
+    ],
+    "exclude" : [ ]
+  },
+  "launch" : {
+    "flags" : [
+      "-Dfml.ignoreInvalidMinecraftCertificates=true -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=256m"
+    ]
+  }
+}
