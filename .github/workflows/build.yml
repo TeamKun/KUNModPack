@@ -1,0 +1,32 @@
+name: Build Modpack
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Build FruitLauncher Modpack
+      env:
+        GRADLE_OPTS: -Dorg.gradle.daemon=false
+        MODPACK_NAME: ${{secrets.modpack_name}}
+        PERSONAL_USERNAME: ${{secrets.personal_username}}
+        PERSONAL_ACCESS_TOKEN: ${{secrets.personal_access_token}}
+      run: |
+        git clone --quiet --depth=1 https://gitlab.com/TeamFruit/fruitpacks.git repo &> /dev/null
+        java -jar libs/launcher-builder-1.2.3-all.jar --version $(date +%Y-%m-%d-%H-%M-%S) --input ${MODPACK_NAME} --output repo/repository --manifest-dest repo/repository/${MODPACK_NAME,,}.json
+        cd repo
+        git config --global user.name "action@github.com"
+        git config --global user.email "GitHub Action"
+        git add --all
+        git commit -m "TravisCI:${MODPACK_NAME}"
+        git push --quiet https://${PERSONAL_USERNAME}:${PERSONAL_ACCESS_TOKEN}@gitlab.com/TeamFruit/fruitpacks.git HEAD:master &> /dev/null
+        cd ../
